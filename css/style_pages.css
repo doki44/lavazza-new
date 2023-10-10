@@ -75,12 +75,13 @@ ul {
   padding: 0 15px;
 }
 
-._title {
+._title-pages {
   font-family: "CormorantGaramond-SemiBold";
   font-size: 48px;
   color: #000;
   margin-bottom: 60px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 ._text {
@@ -145,7 +146,7 @@ ul {
   background: #FFF7ED;
   padding: 145px 0;
 }
-.contacts ._title {
+.contacts ._title-pages {
   color: #061320;
 }
 .contacts__feedback {
@@ -730,13 +731,54 @@ ul {
   max-width: 480px;
 }
 
+.shop__descr {
+  font-size: 18px;
+  font-family: "Jost-Regular";
+}
+.shop__descr-p {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.shop__descr-link {
+  color: #939393;
+  position: relative;
+  padding-left: 60px;
+}
+.shop__descr-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 40px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/arrow-right.svg);
+}
+
+.shop__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 15px;
+}
+.shop__items img {
+  max-width: 100%;
+}
+
+.shop__item-descr {
+  font-size: 16px;
+}
+
 .block {
   padding: 70px 0;
 }
 .block__title {
+  margin-bottom: 40px;
   font-family: "CormorantGaramond-SemiBold";
   font-size: 48px;
   position: relative;
+  width: 100%;
   text-align: center;
   padding: 0 10px;
 }
@@ -753,44 +795,4 @@ ul {
 }
 .block__title::after {
   right: -30%;
-}
-
-.feedback {
-  padding: 70px 0 90px;
-  background: #061320;
-}
-.feedback__inner {
-  text-align: center;
-}
-.feedback__p {
-  color: #fff;
-  margin-bottom: 50px;
-}
-.feedback__form {
-  display: flex;
-  margin-bottom: 60px;
-}
-.feedback__form-input {
-  width: 100%;
-  margin-right: 25px;
-  padding: 16px 18px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  font-family: "Jost-Regular";
-}
-.feedback__form-input:last-child {
-  margin-right: 0;
-}
-.feedback__btn {
-  padding: 16px 115px;
-  cursor: pointer;
-  color: #061320;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  background: #FFF7ED;
-  font-family: inherit;
-  font-size: 18px;
 }

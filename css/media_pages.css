@@ -17,6 +17,9 @@
   }
 }
 @media (max-width: 1000px) {
+  ._title-pages {
+    text-align: left;
+  }
   .top {
     margin-bottom: 30px;
   }
@@ -306,6 +309,16 @@
   }
   .footer__menu li:last-child {
     margin-bottom: 0;
+  }
+  .block__title {
+    font-size: 30px;
+  }
+  .block__title::before, .block__title::after {
+    display: none;
+  }
+  .shop__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 @media (max-width: 550px) {
